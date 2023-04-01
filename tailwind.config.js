@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'sidebar-hover-grey':'#D7C0FD',
+      },
+    },
   },
   plugins: [],
 }

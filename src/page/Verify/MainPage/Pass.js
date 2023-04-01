@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { Button } from '@mui/material';
+import { div, NavLink } from "react-router-dom";
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -39,29 +40,30 @@ export default function ColorTabs() {
                 </div>
                 </Item>
             </Grid>
-
-            <Tabs
-                value={value}
-                onChange={handleChange}
-                textColor="warning"
-                indicatorColor="warning"
-                aria-label="warning tabs example">
-                <Tab value="one" label="รอการยืนยัน" />
-            </Tabs>
-            <Tabs
-                value={value}
-                onChange={handleChange}
-                textColor="red">
-                <Tab value="two" label="ไม่สำเร็จ" />
-            </Tabs>
-            <Tabs
-                value={value}
-                onChange={handleChange}
-                textColor="success">
-                <Tab value="three" label="สำเร็จ" />
-            </Tabs>
-            
-
+            <Grid item xs={6} md={16}>
+            <Item style={{ textAlign: 'left'}}>
+                <NavLink to={"/้check"} >
+                <Button variant="contained" color="grey" size="large">
+                    รอการตรวจสอบ</Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </NavLink>
+                <NavLink to={"/notpass"} >
+                <Button variant="contained" color="grey" size="large">
+                    ไม่สำเร็จ</Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </NavLink>
+                <NavLink to={"/pass"} >
+                <Button variant="contained" color="success" size="large">
+                    สำเร็จ</Button>
+                </NavLink>
+              </Item>
+              <Item style={{ textAlign: 'center'}}>
+              <div style={{ height: 150, width: '100%', justifyContent: 'center'} }></div>
+              <div style={{fontSize: '80px'} }>
+                    ลงทะเบียนสำเร็จ<br></br></div>
+              <Button variant="contained" color="secondary" size="large">คลิ๊กเพื่อสร้างสถานีชาร์จ</Button>
+              <div style={{ height: 240, width: '100%', justifyContent: 'center'} }></div>
+              
+              </Item>
+            </Grid>
         </Grid>
       
     </Box>

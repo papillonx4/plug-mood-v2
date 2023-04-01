@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 // import useStyles from './style';
 import { inputLabelClasses } from "@mui/material/InputLabel";
+import { div, NavLink } from "react-router-dom";
 
 
 function Copyright(props) {
@@ -152,6 +153,7 @@ export default function LoginPage() {
                                     }
                                 }}
                             />
+                            <NavLink to={"/main"} >
                             <Button
                                 className={{
                                     "&.MuiButton-root": {
@@ -176,7 +178,7 @@ export default function LoginPage() {
                                 sx={{ mt: 3, mb: 2 }}
                             >
                                 Sign In
-                            </Button>
+                            </Button></NavLink>
                             <Grid container>
                                 <Grid item xs>
                                     <Link to="register" variant="body2" style={{ textDecoration: 'none' }}>

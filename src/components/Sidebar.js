@@ -23,6 +23,7 @@ const Sidebar = () => {
                                 <div key={index}>
                                     <NavLink to={item.path} 
                                     className={({isActive}) => isActive ? activeLink : normalLink}>
+                                        
                                         <span>{item.icon}</span>
                                         <span>{item.title}</span>
                                     </NavLink>
