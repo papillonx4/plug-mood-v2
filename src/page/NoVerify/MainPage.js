@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import { Button } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { div, NavLink } from "react-router-dom";
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -51,7 +52,8 @@ const Item = styled(Paper)(({ theme }) => ({
                 <div style={{fontSize: '50px'} }>
                 กรุณากรอกแบบฟอร์มยืนยันตัวตน<br></br>เพื่อทำการลงทะเบียน</div>
                 <div></div>
-                <Button variant="contained" color="secondary" size="large">คลิกเพื่อลงทะเบียน</Button>
+                <NavLink to={"/form"} >
+                <Button variant="contained" color="secondary" size="large">คลิกเพื่อลงทะเบียน</Button></NavLink>
                 <div style={{ height: 120, width: '100%', justifyContent: 'center'} }>
                 </div>
                 </Item>

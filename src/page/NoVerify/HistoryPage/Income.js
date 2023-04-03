@@ -89,9 +89,9 @@ export default function SelectSmall() {
                     label="Year"
                     onChange={handleChange}
                 >
-                     <MenuItem value={66}>2566</MenuItem>
-                     <MenuItem value={65}>2565</MenuItem>
-                     <MenuItem value={64}>2564</MenuItem>
+                     <MenuItem value="">
+                    <em>ไม่มีสถานีชาร์จปัจจุบัน</em>
+                    </MenuItem>
                 </Select>
                 </FormControl>
 

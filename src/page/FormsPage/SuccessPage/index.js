@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import { AiFillCheckCircle } from "react-icons/ai";
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
+import { div, NavLink } from "react-router-dom";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#000000' : '#fff',
@@ -29,13 +30,14 @@ return(
                 ลงทะเบียนสำเร็จแล้ว</div>
             <div style={{fontSize: '26px'} }>
                 รอการยืนยันประมาณ 3-4 วัน</div><br/>
+                <NavLink to={"/check"} >
                  <Button
                     type="submit"
                     variant="contained"
                     style={{float: "center",borderRadius:'50px',border: "1px solid black",backgroundColor:"lightgrey",color:"black"}}
                     to="/main">
                     กลับหน้าหลัก
-                  </Button>
+                  </Button></NavLink>
             <div style={{ height: 290, width: '100%', justifyContent: 'center'} }></div>
             </Item>
         </Grid>

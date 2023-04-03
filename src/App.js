@@ -15,6 +15,8 @@ import IncomePage from './page/NoVerify/HistoryPage/Income'
 import CheckPage from './page/Verify/MainPage/Check'
 import NotPassPage from './page/Verify/MainPage/NotPass'
 import PassPage from './page/Verify/MainPage/Pass'
+import Sidebar from './components/Sidebar';
+
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
         <Route exact path="/" element={<LoginPage/>}/>
         <Route path="register" element={<RegisterPage />} />
     </Routes> */}
-    <FormsPage/>
+    <Main/>
 
 
     </BrowserRouter>

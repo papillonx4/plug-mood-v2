@@ -61,7 +61,8 @@ export default function ColorTabs() {
                     กรุณากรอกแบบฟอร์มใหม่่</div>
               <div style={{fontSize: '40px'} }>
                     เหลืออีก 2 ครั้ง<br></br>ถ้าหากไม่สำเร็จ 3 ครั้งคุณจะไม่สามารถใช้บัญชีนี้ได้อีก</div>
-              <Button variant="contained" color="secondary" size="large">กรอกฟอร์มอีกครั้ง</Button>
+              <NavLink to={"/form"} >
+              <Button variant="contained" color="secondary" size="large">กรอกฟอร์มอีกครั้ง</Button></NavLink>
               <div style={{ height: 240, width: '100%', justifyContent: 'center'} }></div>
               
               </Item>

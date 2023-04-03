@@ -81,7 +81,7 @@ export default function SelectSmall() {
                 คะแนนรีวิว</div>
                 <div style={{ height: 10, width: '100%', justifyContent: 'center'} }></div>
                 <div style={{fontSize: '20px'} }>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 รีวิว</div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0/5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(0 รีวิว)</div>
                 <div style={{ height: 450, width: '100%', justifyContent: 'center'} }></div>
                 </Item>
             </Grid>

@@ -2,6 +2,7 @@ import React from "react";
 import {BsBook} from 'react-icons/bs'
 import logo from '../assets/img/logo.png'
 
+
 const Navbar = () => {
     return(
         <React.Fragment>
